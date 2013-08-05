@@ -4,5 +4,5 @@
 #EXT-X-MEDIA-SEQUENCE:0
 #EXT-X-PLAYLIST-TYPE:VOD
 #EXTINF:9.60000,	
-http://localhost:5000/stream/fileSequence1.ts
+/stream/fileSequence1.ts
 #EXT-X-ENDLIST
