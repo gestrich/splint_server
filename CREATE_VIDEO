@@ -43,8 +43,9 @@ variantplaylistcreator
   least one stream at 64 Kbps or lower bandwidth (the low-bandwidth stream may be audio-only 
   or audio with a still image)
 
-
-  //QUICK STEPS to adding new video
+  **************************************** 
+  QUICK STEPS to adding new video
+  **************************************** 
   -Make video with Quicktime and export in right format
     -Choose "export", "iPad, iPhone, iPod..."
     -Select "iPad, iPhone 4, Apple TV
