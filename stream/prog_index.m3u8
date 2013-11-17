@@ -4,5 +4,7 @@
 #EXT-X-MEDIA-SEQUENCE:0
 #EXT-X-PLAYLIST-TYPE:VOD
 #EXTINF:9.60000,	
+/stream/fileSequence0.ts
+#EXTINF:9.60000,	
 /stream/fileSequence1.ts
 #EXT-X-ENDLIST

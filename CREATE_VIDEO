@@ -1,0 +1,57 @@
+Index File
+  .m3u8
+    An index file, or playlist, gives the clients the URLs of the media segment files.
+
+    Apple provides a free tool to make
+      media segment files and playlists from MPEG-4 video or QuickTime movies with H.264 video compression,
+
+
+        Apple file segmenter
+            Creates index file
+                segments MPEG-2 transport stream into series of .ts files
+
+
+                     Apple File Segmenter(MPEG-4) -> MPEG Stream, .m3u8 index file 
+
+mediafilesegmenter
+  File format for the file segmenter can be a QuickTime movie, MPEG-4 video, or MP3 audio, using the specified encoding.
+
+  If you are re-encoding from a master file for video on demand, you can use a video editing tool such as Compressor.
+
+variantplaylistcreator
+  creates a master index file, or playlist, listing the index files for 
+  alternate streams at different bit rates, using the output of the mediafilesegmenter. 
+ 
+  The mediafilesegmenter must be invoked with the -generate-variant-playlist argument 
+  to produce the required output for the variant playlist creator.
+
+  Where possible, encode enough variants to provide the best quality stream across a 
+  wide range of connection speeds. For example, encode variants at 150 kbps, 350 kbps, 
+  550 kbps, 900 kbps, 1500 kbps.
+
+  A 150k stream for the cellular variant playlist is recommended.
+
+  A 240k or 440k stream for the Wi-Fi variant playlist is recommended.
+
+  H.264 High Profile 4.1: iPad 2 and later and iPhone 4S and later. 
+
+  A frame rate of 10 fps is recommended for video streams under 200 kbps. For video streams 
+  under 300 kbps, a frame rate of 12 to 15 fps is recommended. For all other streams, a frame 
+  rate of 29.97 is recommended.
+
+  If your app uses HTTP Live Streaming over cellular networks, you are required to provide at 
+  least one stream at 64 Kbps or lower bandwidth (the low-bandwidth stream may be audio-only 
+  or audio with a still image)
+
+
+  //QUICK STEPS to adding new video
+  -Make video with Quicktime and export in right format
+    -Choose "export", "iPad, iPhone, iPod..."
+    -Select "iPad, iPhone 4, Apple TV
+    -Creates file such as Untitled.m4v
+  -Convert m4v file to MPEG-2 Audio stream
+    -Create directory where video will reside (ex stream2)
+    -Run mediafilesegmenter which will put all files in created directory
+      mediafilesegmenter -f stream3 Untitled.m4v 
+  -Edit the video_index.json and add a reference to newly created .m3u8 file
+
