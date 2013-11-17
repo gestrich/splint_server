@@ -1,8 +1,24 @@
 {
   "videoitems":[
     {
-      "title":"First Video",
-      "urlString":" stream/prog_index.m3u8"
+      "title":"Hand Splint 1",
+      "urlString":"stream/prog_index.m3u8",
+      "videoLength": "1:15"
+    },
+    {
+      "title":"Hand Split 2",
+      "urlString":"stream/prog_index.m3u8",
+      "videoLength": "1:30"
+    },
+    {
+      "title":"Hand Splint 3",
+      "urlString":"stream/prog_index.m3u8",
+      "videoLength": "1:15"
+    },
+    {
+      "title":"Hand Splint 4",
+      "urlString":"stream/prog_index.m3u8",
+      "videoLength": "1:15"
     }
   ] 
 }

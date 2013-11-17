@@ -5,7 +5,7 @@ var path = require("path");
 
 exports.route = function(request, response){
   var uri = url.parse(request.url).pathname
-  , filename = path.join(process.cwd(), uri);
+  , filename = path.join(__dirname, uri);
 
 console.log("Request received for filename = " + filename);
   fs.exists(filename, function(exists) {

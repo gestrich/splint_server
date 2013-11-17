@@ -1,0 +1,27 @@
+Running node server
+Request received for filename = /Users/williamgestrich/Desktop/splint_server/video_index.json
+/Users/williamgestrich/Desktop/splint_server/run.sh: line 4: 81965 Killed: 9               /usr/local/bin/node ~/Desktop/splint_server/web.js
+Errors_en_US.plist
+JSONModel.h
+JSONModel.m
+Media.xcassets
+Podfile
+Podfile.lock
+Pods
+README.md
+RESTError.h
+RESTError.m
+RESTfulEngine.h
+RESTfulEngine.m
+RESTfulOperation.h
+RESTfulOperation.m
+Reveal.framework
+Splint
+Splint copy-Info.plist
+Splint.xcodeproj
+Splint.xcworkspace
+UIAlertView+Blocks.h
+UIAlertView+Blocks.m
+Video.h
+Video.m
+output
