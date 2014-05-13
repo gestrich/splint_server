@@ -27,6 +27,8 @@ exports.route = function(request, response){
     }else if(filename.indexOf('json') >= 0){
       //json file
         response.writeHead(200, {"Content-Type": "application/json"});
+    }else if(filename.indexOf('png') >= 0){
+        response.writeHead(200, {"Content-Type": "image/png"});
     }
     //Read the file
     //filename = "error.json";

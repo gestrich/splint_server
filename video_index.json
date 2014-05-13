@@ -2,8 +2,10 @@
   "videoitems":[
     {
       "title":"Hand Splint 1",
+      "desc":"Description from the server",
       "urlString":"stream2/prog_index.m3u8",
-      "videoLength": "1:15"
+      "videoLength": "1:15",
+      "imageUrl":"stream2/stream2.png"
     },
     {
       "title":"Hand Splint 2",
@@ -16,8 +18,8 @@
       "videoLength": "1:15"
     },
     {
-      "title":"Hand Splint 4",
-      "urlString":"stream/prog_index.m3u8",
+      "title":"Hand Splint 5",
+      "urlString":"stream4/prog_index.m3u8",
       "videoLength": "1:15"
     }
   ] 
